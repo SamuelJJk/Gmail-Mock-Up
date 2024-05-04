@@ -156,6 +156,9 @@
 .secNavItems:hover{
   background-color: rgb(182, 178, 178);
 }
+.active{
+  color:blue;
+}
 .secNavIcons{
   height: 20px;
   width: 20px;
