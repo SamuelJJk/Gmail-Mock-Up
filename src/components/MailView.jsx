@@ -10,22 +10,24 @@ import MailDisplay from './MailDisplay'
 import CheckBox from './CheckBox'
 
 function MailView() {
-  const [page, setPage] = useState('Primary')
-  const changeView = (page)=>{
-    setPage(page)
-    console.log(page)
-
+  //state to know what btn is being click  category
+  const [category, setCategory] = useState('Primary')
+  const changeView = (category)=>{
+    setCategory(category)
+    console.log(category)
   }
+
+  //helper fuction to render the mailDisplay
   const tab = ()=>{
-    if(page === 'Primary'){
+    if(category === 'Primary'){
       return <Primary />
-    }else if(page === "Promotions"){
+    }else if(category === "Promotions"){
       return <Promotions />
-    }else if(page === "Social"){
+    }else if(category === "Social"){
       return <Social />
-    }else if(page === "Updates"){
+    }else if(category === "Updates"){
       return  <Updates />
-    }else if(page === "Forums"){
+    }else if(category === "Forums"){
       return <Forums />
     }
   }

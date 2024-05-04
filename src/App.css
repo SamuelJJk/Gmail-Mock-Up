@@ -16,15 +16,14 @@
   background-color: #2d2d2d;
 }
 .leftContainer, .middleContainer,.rightContainer{
-  border: solid black;
-  width: 33%;
+  /* border: solid black; */
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .middleContainer{
-width: 40%;
+  width: 40%;
 }
 .rightContainer{
   width: 15%;
@@ -73,7 +72,7 @@ width: 40%;
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 20%;
+  width: 18%;
   background-color: #2d2d2d;
   margin-top: 0.5em;
 
@@ -84,14 +83,50 @@ width: 40%;
   display: flex;
   flex-direction: column;
 }
-.labels{
+.section{
   display: flex;
   flex-direction: column;
+  color: white;
+}
+.compose{
+  width: 50%;
+  height: 60px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.composeIcon{
+  height: 20px;
+  width: 20px;
+}
+.sideItem{
+  background-color: transparent;
+  color: white;
+  height: 35px;
+  width: 100%;
+  border-radius: 40px;
+  margin-left: -20px;
+  padding: 10px;
+  border: 0px;
+  text-align: left;
+  padding-left: 4em;
+}
+.sideItem:hover{
+  background-color: #797979;
+}
+.label{
+  font-size: 18px;
+  border: solid black;
+  text-align: left;
+  margin-left: 25px;
 }
 /*--------------------------------------------------- Content */
 .mailView{
   background-color: lightgray;
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
